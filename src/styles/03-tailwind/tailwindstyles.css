@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-shine {
+  background: var(--bg-gradient);
+  background-size: 200% 100%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@theme {
+  --color-skeleton-start: #eee;
+  --color-skeleton-middle: #ddd;
+  --color-btn: #27ae60;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: background-color 200ms ease-in-out;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --bg-gradient: linear-gradient(
+      45deg,
+      rgba(204, 58, 14, 0.6) 0%,
+      #cc3a0e 50%,
+      rgba(204, 58, 14, 0.6) 100%
+    );
+    --color-text: #222222;
+    --color-border: #cc3a0e;
+    --secondary: #cc3a0e;
+    --btn-bg: #cc3a0e;
+    --bar-bg: var(--btn-bg);
+    font-family: "Poppins", sans-serif;
+    --primary-hover: rgba(204, 58, 14, 0.6);
+  }
+
+  .dark {
+    --background: #121212;
+    --bg-gradient: linear-gradient(
+      45deg,
+      #2a2a2a 0%,
+      #3d3d3f 50%,
+      #1c1c1c 100%
+    );
+    --color-text: #ffffff;
+    --color-border: #fff3;
+    --secondary: #ffffff;
+    --btn-bg: #222222;
+    --bar-bg: var(--btn-bg);
+    --primary-hover: rgba(204, 58, 14, 0.6);
+  }
+}

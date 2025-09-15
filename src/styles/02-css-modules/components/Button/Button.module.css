@@ -1,0 +1,70 @@
+:root {
+  --btn-bg-dark: #222222;
+  --btn-bg-light: #cc340e;
+  --btn-bg-hover: rgba(204, 58, 14, 0.6);
+  --btn-color: #ffffff;
+  --btn-bg-solid: #3b82f6;
+  --btn-bg-solid-hover: #2563eb;
+  --btn-bg-outline: #3b82f6;
+  --btn-bg-outline-hover: #2563eb;
+  --btn-bg-ghost: transparent;
+  --btn-bg-ghost-hover: rgba(59, 130, 246, 0.1);
+}
+
+.button {
+  color: var(--btn-color);
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.dark {
+  background: var(--btn-bg-dark);
+}
+
+.light {
+  background: var(--btn-bg-light);
+}
+
+.solid {
+  background-color: var(--btn-bg-solid);
+  color: white;
+}
+
+.solid:hover {
+  background-color: var(--btn-bg-solid-hover);
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--btn-bg-outline);
+  color: var(--btn-bg-outline);
+}
+
+.outline:hover {
+  background-color: var(--btn-bg-outline-hover);
+  color: var(--btn-color);
+}
+
+.ghost {
+  background-color: var(--btn-bg-ghost);
+  color: var(--btn-bg-outline);
+}
+
+.ghost:hover {
+  background-color: var(--btn-bg-ghost-hover);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

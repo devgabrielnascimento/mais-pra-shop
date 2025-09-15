@@ -1,0 +1,39 @@
+.skeleton {
+  background: var(--linear-skeleton);
+  background-size: 200% 100%;
+  animation: pulse 1.2s ease-in-out infinite;
+  gap: 12px;
+}
+
+.skeleton::before {
+  content: "";
+  display: block;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.light {
+  --linear-skeleton: linear-gradient(
+    45deg,
+    rgba(204, 58, 14, 0.6) 0%,
+    #cc3a0e 50%,
+    rgba(204, 58, 14, 0.6) 100%
+  );
+}
+
+.dark {
+  --linear-skeleton: linear-gradient(
+    45deg,
+    #2a2a2a 0%,
+    #3d3d3f 50%,
+    #1c1c1c 100%
+  );
+}
