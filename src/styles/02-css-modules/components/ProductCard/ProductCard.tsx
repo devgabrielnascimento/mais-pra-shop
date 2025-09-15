@@ -5,6 +5,7 @@ import { useProductCardLoading } from "../../../../hooks/useProductCardLoading";
 import { Skeleton } from "../Skeleton/Skeleton";
 import { Button } from "../Button/Button";
 import NewIcon from "../../../../assets/new-icon.svg";
+import Rating from "@mui/material/Rating";
 export function ProductCard({
   id,
   title,
@@ -63,7 +64,33 @@ export function ProductCard({
       {isLoading ? (
         <Skeleton width="120px" height="24px" alignSelf="flex-start" />
       ) : (
-        <p className={styles.rating}>⭐ {rating}</p>
+        <div className={styles.rating}>
+          {theme === "light" ? (
+            <Rating
+              name="simple-controlled"
+              value={rating}
+              readOnly
+              sx={{
+                color: "#CC340E",
+                "& .MuiRating-iconEmpty": {
+                  color: "#CC340E", // cor das estrelas vazias
+                },
+              }}
+            />
+          ) : (
+            <Rating
+              name="simple-controlled"
+              value={rating}
+              readOnly
+              sx={{
+                color: "#FFFFFF",
+                "& .MuiRating-iconEmpty": {
+                  color: "#FFFFFF",
+                },
+              }}
+            />
+          )}
+        </div>
       )}
 
       {isLoading ? (

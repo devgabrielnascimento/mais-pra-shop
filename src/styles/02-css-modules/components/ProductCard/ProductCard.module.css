@@ -50,8 +50,9 @@
 }
 
 .rating {
-  font-size: 14px;
-  line-height: 14px;
+  display: flex;
+  align-self: flex-start;
+  width: auto;
   align-self: flex-start;
   color: #f39c12;
 }
