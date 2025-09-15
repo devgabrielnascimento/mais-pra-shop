@@ -13,7 +13,7 @@ export const Navbar = () => {
   const { isLoading } = useProductCardLoading();
   return (
     <header className="flex fixed top-0 left-0 right-0 z-10 flex-col w-full  justify-center items-center bg-[var(--background)]">
-      <nav className="flex w-full max-w-[1200px] justify-between h-[60px] items-center py-0 px-5  transition-colors duration-200 ease-in-out">
+      <nav className="flex w-full max-w-[1200px] justify-between h-[60px] items-center py-0 px-5  transition-colors duration-200 ease-in-out bg-[var(--bg-navbar)]">
         {theme === "light" ? <LogoMaisPraShopLight /> : <LogoMaisPraShopDark />}
         <div className="flex gap-2">
           {isLoading ? (

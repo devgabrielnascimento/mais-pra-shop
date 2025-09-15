@@ -117,7 +117,7 @@ body {
   height: 100%;
 }
 
-.header,
+
 .navbar {
   background-color: var(--theme-bg);
   color: var(--theme-text);
