@@ -23,13 +23,13 @@ export function ProductCard({
       {isLoading ? (
         <div className="skeletonTagAndId">
           <Skeleton width="40px" height="40px" alignSelf="flex-start" />
-          <Skeleton width="120px" alignSelf="flex-end" height="40px"  />
+          <Skeleton width="120px" alignSelf="flex-end" height="40px" />
         </div>
       ) : (
         <div className="containerTagAndId">
           <div className="containerId">{id}</div>
           <div className="tag">
-            <img src={NewIcon} alt="new" />
+            <img src={NewIcon} alt="new" loading="lazy" />
             {tag}
           </div>
         </div>
@@ -77,7 +77,7 @@ export function ProductCard({
               sx={{
                 color: "#FFFFFF",
                 "& .MuiRating-iconEmpty": {
-                  color: "#FFFFFF", 
+                  color: "#FFFFFF",
                 },
               }}
             />
