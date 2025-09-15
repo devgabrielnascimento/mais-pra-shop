@@ -179,18 +179,19 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 420px;
-  width: 100%;
-  min-height: 320px;
-  padding: 8px;
   border-radius: 8px;
+  padding: 8px;
   justify-content: center;
   align-items: center;
   text-align: left;
+  height: auto;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
   position: relative;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 320px;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
@@ -242,7 +243,6 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
-  align-self: flex-start;
   justify-content: center;
   color: white;
   font-weight: 700;
@@ -286,7 +286,7 @@ body {
   border: 1px solid #fff3;
 }
 
-.container {
+.products-container {
   display: grid;
   justify-items: center;
   width: 100%;
@@ -295,6 +295,7 @@ body {
   grid-template-columns: 1fr;
   padding: 10px;
 }
+
 .main {
   display: flex;
   justify-content: center;
@@ -373,19 +374,19 @@ body {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container {
+  .products-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  .products-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .products-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }

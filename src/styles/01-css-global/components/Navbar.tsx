@@ -43,7 +43,7 @@ export function Navbar() {
         </div>
       </nav>
 
-      <div className="techLabel">Página feita com CSS Globals</div>
+      <div className="techLabel">Página feita com CSS Global</div>
     </header>
   );
 }

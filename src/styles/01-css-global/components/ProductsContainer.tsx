@@ -2,7 +2,7 @@ import { ProductCard } from "../components/ProductCard";
 
 export function ProductsContainer() {
   return (
-    <div className="container">
+    <div className="products-container">
       <ProductCard
         id="1"
         title="Tênis Adventure Running"
