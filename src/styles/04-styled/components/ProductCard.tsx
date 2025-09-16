@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import type { ProductCard as ProductCardType } from "../../../types/productcard";
-import { ButtonStyled } from "./ButtonStyled";
+import { Button } from "./Button";
 import { useProductCardLoading } from "../../../hooks/useProductCardLoading";
 import { Skeleton } from "../components/Skeleton";
 import NewIcon from "../../../assets/new-icon.svg";
@@ -224,7 +224,7 @@ export function ProductCard({
             )
             }
           </RatingBackground>
-          <ButtonStyled>Comprar</ButtonStyled>
+          <Button>Comprar</Button>
         </>
       )}
     </Card>

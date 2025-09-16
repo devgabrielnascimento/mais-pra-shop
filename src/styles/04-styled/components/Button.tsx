@@ -64,7 +64,7 @@ const BtnStyled = styled.button<{
     `}
 `;
 
-export function ButtonStyled({
+export function Button({
   children,
   variant = "solid",
   disabled = false,
