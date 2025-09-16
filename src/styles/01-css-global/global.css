@@ -129,6 +129,7 @@ body {
   height: 35px;
   width: 35px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .dropdownContainer {
@@ -137,7 +138,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #4b5563;
+  background-color: #4B6A78;
 }
 
 .iconLight {

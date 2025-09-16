@@ -6,10 +6,11 @@ import BedtimeIcon from "@mui/icons-material/Bedtime";
 import SunnyIcon from "@mui/icons-material/Sunny";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
-
+import { useProductCardLoading } from "../../../hooks/useProductCardLoading";
+import { Skeleton } from "../components/Skeleton";
 export function Navbar() {
   const { toggleTheme, theme } = useTheme();
-
+  const { isLoading } = useProductCardLoading();
   return (
     <header className="header">
       <nav className="navbar">
@@ -22,15 +23,23 @@ export function Navbar() {
         </div>
 
         <div className="toggleTheme">
-          <button className="btn" onClick={toggleTheme}>
-            {theme === "light" ? <BedtimeIcon /> : <SunnyIcon />}
-          </button>
+          {isLoading ? (
+            <Skeleton width="35px" height="35px" />
+          ) : (
+            <button className="btn" onClick={toggleTheme}>
+              {theme === "light" ? <BedtimeIcon /> : <SunnyIcon />}
+            </button>
+          )}
 
-          <button className="btn">
-            <Badge badgeContent={6} color="primary">
-              <ShoppingCartIcon />
-            </Badge>
-          </button>
+          {isLoading ? (
+            <Skeleton width="35px" height="35px" />
+          ) : (
+            <button className="btn">
+              <Badge badgeContent={6} color="primary">
+                <ShoppingCartIcon />
+              </Badge>
+            </button>
+          )}
 
           <Dropdown
             items={[

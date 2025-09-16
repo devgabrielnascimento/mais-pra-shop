@@ -21,7 +21,7 @@ export const Navbar = () => {
           ) : (
             <button
               onClick={toggleTheme}
-              className="rounded-[8px] w-[35px] h-[35px] bg-[var(--secondary)] transition duration-200 ease-in-out  cursor-pointer hover:bg-gray-600"
+              className="rounded-[8px] w-[35px] h-[35px] bg-[var(--secondary)] transition duration-200 ease-in-out  cursor-pointer hover:bg-[var(--btn-hover)]"
             >
               {theme === "light" ? (
                 <BedtimeIcon sx={{ color: "#ffffff" }} />
@@ -34,7 +34,7 @@ export const Navbar = () => {
           {isLoading ? (
             <Skeleton width="35px" height="35px" radius="8px" />
           ) : (
-            <button className="rounded-[8px] w-[35px] h-[35px] bg-[var(--secondary)] transition duration-200 ease-in-out  cursor-pointer  hover:bg-gray-600">
+            <button className="rounded-[8px] w-[35px] h-[35px] bg-[var(--secondary)] transition duration-200 ease-in-out  cursor-pointer  hover:bg-[var(--btn-hover)]">
               <Badge badgeContent={6} color="primary">
                 {theme === "light" ? (
                   <ShoppingCartIcon sx={{ color: "#ffffff" }} />

@@ -18,7 +18,13 @@
   height: 35px;
   border-radius: 8px;
   background: #CC3A0E;
+  cursor: pointer;
+  }
+
+.btn:hover {
+  background-color: #4B6A78;
 }
+
 
 .btnDark {
   background: #ffffff;

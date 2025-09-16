@@ -42,6 +42,7 @@
     --color-border: #cc3a0e;
     --secondary: #cc3a0e;
     --btn-bg: #cc3a0e;
+    --btn-hover: #4B6A78;
     --bar-bg: var(--btn-bg);
     font-family: "Poppins", sans-serif;
     --primary-hover: rgba(204, 58, 14, 0.6);
@@ -60,6 +61,7 @@
     --color-border: #fff3;
     --secondary: #ffffff;
     --btn-bg: #222222;
+    --btn-hover: #4B6A78;
     --bar-bg: var(--btn-bg);
     --primary-hover: rgba(204, 58, 14, 0.6);
   }

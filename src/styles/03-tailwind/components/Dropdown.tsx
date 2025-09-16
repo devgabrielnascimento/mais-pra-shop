@@ -25,7 +25,7 @@ const {theme } = useTheme();
       ) : (
         <button
           className="w-[35px] h-[35px] rounded-[8px] transition duration-200 ease-in-out
-               bg-[var(--secondary)] text-white cursor-pointer hover:bg-gray-600"
+               bg-[var(--secondary)] text-white cursor-pointer hover:bg-[var(--btn-hover)]"
         >
           {theme === "light" ? (
             <SwitchLeftIcon sx={{ color: "#ffffff" }} />
